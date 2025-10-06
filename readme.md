@@ -21,6 +21,8 @@ The project only needs to log a small number of requests locally. SQLite is simp
 
 React allows fast development and makes it easy to add new features like filters or charts later. Components can be reused to keep the code organized and easy to maintain.
 
+Beyond changing the tech stack, large-scale deployments could apply semantic caching to reduce redundant LLM calls and latency. See [semantic caching] (https://github.com/wenqian66/semantic_cache.git)
+
 ### Design
 
 - Backend endpoints:
