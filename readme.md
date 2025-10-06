@@ -9,9 +9,17 @@ The system records each LLM call including the model, prompt, output, latency, a
 ## Architecture
 
 Backend: FastAPI (Python)  
-Frontend: React (Vite)  
+Frontend: React  
 Database: SQLite  
 Model API: Gemini
+
+**Reasons:**
+
+FastAPI supports asynchronous requests, which makes it efficient for handling multiple LLM calls at once. It’s lightweight, easy to set up, and automatically generates API documentation, which helps with quick testing.
+
+The project only needs to log a small number of requests locally. SQLite is simple, reliable, and doesn’t need any setup. When scaling up, it can be replaced by PostgreSQL just by updating the database URL.
+
+React allows fast development and makes it easy to add new features like filters or charts later. Components can be reused to keep the code organized and easy to maintain.
 
 ### Design
 
@@ -20,6 +28,12 @@ Model API: Gemini
   - `GET /api/requests`: returns all stored requests.
 - Data fields: id, model, prompt, output, latency, created_at.
 - The code structure supports extension to other providers by changing base URL, API key, and response mapping logic.
+  
+```
+User → React Frontend → FastAPI Backend → Gemini API
+             │
+            SQLite Database
+```
 
 ## Setup
 
