@@ -1,0 +1,913 @@
+{
+  "timestamp": "2026-02-04T15:47:54.822922",
+  "total_requests": 20,
+  "successful": 20,
+  "failed": 0,
+  "results": [
+    {
+      "request_id": 1,
+      "llm_type": "general",
+      "semantic_cache": true,
+      "stream": false,
+      "question": "Explain quantum computing in simple terms.",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 3.788543939590454,
+      "response_length": 0,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 2,
+      "llm_type": "general",
+      "semantic_cache": true,
+      "stream": false,
+      "question": "Write a Python function to reverse a string.",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 9.896894216537476,
+      "response_length": 277,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 3,
+      "llm_type": "general",
+      "semantic_cache": true,
+      "stream": true,
+      "question": "What are the benefits of exercise?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 21.697417974472046,
+      "response_length": 190,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 4,
+      "llm_type": "general",
+      "semantic_cache": true,
+      "stream": false,
+      "question": "How does photosynthesis work?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 6.785178899765015,
+      "response_length": 0,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 5,
+      "llm_type": "general",
+      "semantic_cache": true,
+      "stream": true,
+      "question": "What is machine learning?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 28.718903064727783,
+      "response_length": 391,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 6,
+      "llm_type": "general",
+      "semantic_cache": false,
+      "stream": false,
+      "question": "Explain the theory of relativity.",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 15.924675226211548,
+      "response_length": 112,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 7,
+      "llm_type": "general",
+      "semantic_cache": false,
+      "stream": false,
+      "question": "What is the meaning of life?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 24.995954990386963,
+      "response_length": 0,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 8,
+      "llm_type": "general",
+      "semantic_cache": false,
+      "stream": true,
+      "question": "How do computers work?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 12.690971851348877,
+      "response_length": 0,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 9,
+      "llm_type": "general",
+      "semantic_cache": false,
+      "stream": false,
+      "question": "What is artificial intelligence?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 18.932876110076904,
+      "response_length": 150,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 10,
+      "llm_type": "general",
+      "semantic_cache": false,
+      "stream": true,
+      "question": "What is the capital of France?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 25.710569143295288,
+      "response_length": 6,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 11,
+      "llm_type": "coding",
+      "semantic_cache": true,
+      "stream": false,
+      "question": "Explain quantum computing in simple terms.",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 41.599705934524536,
+      "response_length": 700,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 12,
+      "llm_type": "coding",
+      "semantic_cache": true,
+      "stream": false,
+      "question": "Write a Python function to reverse a string.",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 18.415316104888916,
+      "response_length": 63,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 13,
+      "llm_type": "coding",
+      "semantic_cache": true,
+      "stream": true,
+      "question": "What are the benefits of exercise?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 26.99073314666748,
+      "response_length": 510,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 14,
+      "llm_type": "coding",
+      "semantic_cache": true,
+      "stream": false,
+      "question": "How does photosynthesis work?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 22.442485094070435,
+      "response_length": 0,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 15,
+      "llm_type": "coding",
+      "semantic_cache": true,
+      "stream": true,
+      "question": "What is machine learning?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 13.378851652145386,
+      "response_length": 775,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 16,
+      "llm_type": "coding",
+      "semantic_cache": false,
+      "stream": false,
+      "question": "Explain the theory of relativity.",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 36.02962589263916,
+      "response_length": 557,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 17,
+      "llm_type": "coding",
+      "semantic_cache": false,
+      "stream": false,
+      "question": "What is the meaning of life?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 31.47988986968994,
+      "response_length": 688,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 18,
+      "llm_type": "coding",
+      "semantic_cache": false,
+      "stream": true,
+      "question": "How do computers work?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 4.962920904159546,
+      "response_length": 491,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 19,
+      "llm_type": "coding",
+      "semantic_cache": false,
+      "stream": false,
+      "question": "What is artificial intelligence?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 9.276878118515015,
+      "response_length": 845,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    },
+    {
+      "request_id": 20,
+      "llm_type": "coding",
+      "semantic_cache": false,
+      "stream": true,
+      "question": "What is the capital of France?",
+      "success": true,
+      "error": null,
+      "status_code": 200,
+      "total_time": 36.70620679855347,
+      "response_length": 6,
+      "cache_hit": false,
+      "queue_time_ms": null,
+      "llm_latency_ms": null
+    }
+  ],
+  "errors": [],
+  "queue_snapshots": [
+    {
+      "timestamp": 0.1857149600982666,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 0.8775508403778076,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 1.5568950176239014,
+      "general_queue": 10,
+      "general_active": 0,
+      "coding_queue": 9,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 2.2589728832244873,
+      "general_queue": 9,
+      "general_active": 1,
+      "coding_queue": 9,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 2.978745698928833,
+      "general_queue": 9,
+      "general_active": 1,
+      "coding_queue": 9,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 3.6838128566741943,
+      "general_queue": 9,
+      "general_active": 1,
+      "coding_queue": 9,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 4.385945796966553,
+      "general_queue": 9,
+      "general_active": 1,
+      "coding_queue": 9,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 5.093232870101929,
+      "general_queue": 8,
+      "general_active": 1,
+      "coding_queue": 9,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 5.768683910369873,
+      "general_queue": 8,
+      "general_active": 1,
+      "coding_queue": 9,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 6.439803838729858,
+      "general_queue": 8,
+      "general_active": 1,
+      "coding_queue": 8,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 7.146575927734375,
+      "general_queue": 8,
+      "general_active": 1,
+      "coding_queue": 8,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 7.870085716247559,
+      "general_queue": 8,
+      "general_active": 1,
+      "coding_queue": 8,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 8.578170776367188,
+      "general_queue": 7,
+      "general_active": 1,
+      "coding_queue": 8,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 9.291192770004272,
+      "general_queue": 7,
+      "general_active": 1,
+      "coding_queue": 8,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 9.990293979644775,
+      "general_queue": 7,
+      "general_active": 1,
+      "coding_queue": 8,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 10.671854734420776,
+      "general_queue": 7,
+      "general_active": 1,
+      "coding_queue": 7,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 11.356796979904175,
+      "general_queue": 6,
+      "general_active": 1,
+      "coding_queue": 7,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 12.050505876541138,
+      "general_queue": 6,
+      "general_active": 1,
+      "coding_queue": 7,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 12.762070894241333,
+      "general_queue": 6,
+      "general_active": 1,
+      "coding_queue": 7,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 13.478068828582764,
+      "general_queue": 6,
+      "general_active": 1,
+      "coding_queue": 7,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 14.20313286781311,
+      "general_queue": 5,
+      "general_active": 1,
+      "coding_queue": 7,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 14.90390682220459,
+      "general_queue": 5,
+      "general_active": 1,
+      "coding_queue": 6,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 15.616958856582642,
+      "general_queue": 5,
+      "general_active": 1,
+      "coding_queue": 6,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 16.314992904663086,
+      "general_queue": 5,
+      "general_active": 1,
+      "coding_queue": 6,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 17.022907733917236,
+      "general_queue": 5,
+      "general_active": 1,
+      "coding_queue": 6,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 17.743132829666138,
+      "general_queue": 4,
+      "general_active": 1,
+      "coding_queue": 6,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 18.456775903701782,
+      "general_queue": 4,
+      "general_active": 1,
+      "coding_queue": 6,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 19.165275812149048,
+      "general_queue": 4,
+      "general_active": 1,
+      "coding_queue": 5,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 19.8583927154541,
+      "general_queue": 4,
+      "general_active": 1,
+      "coding_queue": 5,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 20.57522988319397,
+      "general_queue": 3,
+      "general_active": 1,
+      "coding_queue": 5,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 21.27791166305542,
+      "general_queue": 3,
+      "general_active": 1,
+      "coding_queue": 5,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 21.988738775253296,
+      "general_queue": 3,
+      "general_active": 1,
+      "coding_queue": 5,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 22.697778940200806,
+      "general_queue": 3,
+      "general_active": 1,
+      "coding_queue": 5,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 23.40788197517395,
+      "general_queue": 2,
+      "general_active": 1,
+      "coding_queue": 5,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 24.12199091911316,
+      "general_queue": 2,
+      "general_active": 1,
+      "coding_queue": 4,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 24.81668496131897,
+      "general_queue": 2,
+      "general_active": 1,
+      "coding_queue": 4,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 25.538289785385132,
+      "general_queue": 2,
+      "general_active": 1,
+      "coding_queue": 4,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 26.255243062973022,
+      "general_queue": 1,
+      "general_active": 1,
+      "coding_queue": 4,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 26.942705869674683,
+      "general_queue": 1,
+      "general_active": 1,
+      "coding_queue": 4,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 27.655916929244995,
+      "general_queue": 0,
+      "general_active": 1,
+      "coding_queue": 4,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 28.371471881866455,
+      "general_queue": 0,
+      "general_active": 1,
+      "coding_queue": 3,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 29.11336088180542,
+      "general_queue": 0,
+      "general_active": 1,
+      "coding_queue": 3,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 29.80479383468628,
+      "general_queue": 0,
+      "general_active": 1,
+      "coding_queue": 3,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 30.512959003448486,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 3,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 31.221470832824707,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 3,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 31.895208835601807,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 3,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 32.58947682380676,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 3,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 33.29218578338623,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 2,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 33.99548292160034,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 2,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 34.71179389953613,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 2,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 35.41893982887268,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 2,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 36.128599643707275,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 2,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 36.83078193664551,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 2,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 37.54731273651123,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 1,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 38.254549980163574,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 38.96102499961853,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 39.63572669029236,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 40.3306097984314,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 40.99908685684204,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 41.683963775634766,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 42.396734952926636,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 1
+    },
+    {
+      "timestamp": 43.10327982902527,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 43.77633571624756,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 44.488322734832764,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 45.17148804664612,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 45.884299993515015,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 46.5929479598999,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 47.30470871925354,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 48.09284687042236,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 48.781251668930054,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 49.49772906303406,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 50.175230979919434,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 50.894511699676514,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 51.618409872055054,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 52.32953190803528,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 53.05633878707886,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 53.76026797294617,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 54.470324993133545,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 55.18505382537842,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 55.89697194099426,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 56.60638380050659,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 57.312525033950806,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 58.03006172180176,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 58.74751281738281,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 59.46271276473999,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    },
+    {
+      "timestamp": 60.14053678512573,
+      "general_queue": 0,
+      "general_active": 0,
+      "coding_queue": 0,
+      "coding_active": 0
+    }
+  ]
+}

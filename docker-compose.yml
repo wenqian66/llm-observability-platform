@@ -1,0 +1,107 @@
+services:
+  traefik:
+    image: traefik:v3.2
+    ports:
+      - "80:80"
+    volumes:
+      - ./traefik/traefik.yml:/etc/traefik/traefik.yml:ro
+      - ./traefik/dynamic.yml:/etc/traefik/dynamic.yml:ro
+    depends_on:
+      fastapi:
+        condition: service_healthy
+
+  fastapi:
+    build: .
+    deploy:
+      replicas: 2
+    environment:
+      - GENERAL_LLM_URL=${GENERAL_LLM_URL:-http://host.docker.internal:11434/v1}
+      - GENERAL_LLM_API_KEY=${GENERAL_LLM_API_KEY:-sk-local}
+      - GENERAL_LLM_CONCURRENT_LIMIT=4
+      - CODING_LLM_URL=${CODING_LLM_URL:-http://host.docker.internal:11434/v1}
+      - CODING_LLM_API_KEY=${CODING_LLM_API_KEY:-sk-local}
+      - CODING_LLM_CONCURRENT_LIMIT=4
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - POSTGRES_HOST=timescaledb
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=llm_gateway
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=changeme
+      - TIMESCALE_HOST=timescaledb
+      - TIMESCALE_PORT=5432
+      - TIMESCALE_DB=llm_metrics
+      - TIMESCALE_USER=admin
+      - TIMESCALE_PASSWORD=changeme
+      - ENABLE_AUTH=false
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      redis:
+        condition: service_healthy
+      timescaledb:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:8000/health', timeout=5.0)"]
+      interval: 15s
+      timeout: 10s
+      start_period: 20s
+      retries: 3
+
+  celery-worker:
+    build: .
+    command: celery -A celery_worker worker --loglevel=info --concurrency=2
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - TIMESCALE_HOST=timescaledb
+      - TIMESCALE_PORT=5432
+      - TIMESCALE_DB=llm_metrics
+      - TIMESCALE_USER=admin
+      - TIMESCALE_PASSWORD=changeme
+    depends_on:
+      redis:
+        condition: service_healthy
+      timescaledb:
+        condition: service_healthy
+
+  celery-beat:
+    build: .
+    command: celery -A celery_worker beat --loglevel=info
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - TIMESCALE_HOST=timescaledb
+      - TIMESCALE_PORT=5432
+      - TIMESCALE_DB=llm_metrics
+      - TIMESCALE_USER=admin
+      - TIMESCALE_PASSWORD=changeme
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  timescaledb:
+    image: timescale/timescaledb:latest-pg16
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=changeme
+    ports:
+      - "5432:5432"
+    volumes:
+      - timescale_data:/var/lib/postgresql/data
+      - ./database_init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  timescale_data:

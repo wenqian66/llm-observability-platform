@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: echolog-config
+data:
+  REDIS_HOST: "redis-service"
+  REDIS_PORT: "6379"
+  POSTGRES_HOST: "timescaledb-service"
+  POSTGRES_PORT: "5432"
+  POSTGRES_DB: "llm_gateway"
+  TIMESCALE_HOST: "timescaledb-service"
+  TIMESCALE_PORT: "5432"
+  TIMESCALE_DB: "llm_metrics"
+  ENABLE_AUTH: "true"
+  REDIS_URL: "redis://redis-service:6379/0"
